@@ -1,6 +1,5 @@
 - var images1 = [2076051, 1373686, 26841, 159042, 1864015, 1406201, 479533, 455824, 49344, 982096, 1373713, 786111, 479543, 1406229, 159066, 772125, 1373742, 1864019, 110400, 910880, 49343, 5552825]
 
-- var imgHost = "https://images.unsplash.com/photo-"
 -
  var images2 = [
     "1606787947360-4181fe0ab58c?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
@@ -24,12 +23,12 @@
  ]
 
 
-mixin alikeImages()
+mixin wallpaperImg()
     each img in images1
         figure 
-            img(src=`${img}.jpg`, alt="")
+            img(src=`/full/${img}.jpg`, alt="")
 
-mixin diffImages()
+mixin unsplashImg()
     each img in images2
         figure 
-            img(src=`${imgHost}${img}.jpg`, alt="")
+            img(src!='/photo-'+img+'.jpg', alt="")

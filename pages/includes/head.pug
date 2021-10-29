@@ -1,11 +1,13 @@
-mixin head(desc, title, stylesheet)
+mixin head(desc, title, stylesheet, CSPs, baseURL)
+    - var CSPs    = typeof CSPs != "undefined" ? CSPs : ''
+    - var baseURL = typeof baseURL != "undefined" ? baseURL : './'
     doctype html
     html(lang="en")
         head
             meta(charset="UTF-8")
             meta(name="viewport", content="width=device-width, initial-scale=1.0")
-            meta(http-equiv="Content-Security-Policy", content="default-src 'self' https://wallpaperaccess.com")
-            meta(name="description", content="#{desc}")
+            meta(http-equiv="Content-Security-Policy", content="default-src 'self' "+CSPs)
+            meta(name="description", content=''+desc)
             title= title
             link(rel="stylesheet", href="styles/css/"+stylesheet+".css")
-            base(href="https://wallpaperaccess.com/full/")
+            base(href=''+baseURL)

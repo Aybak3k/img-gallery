@@ -4,14 +4,20 @@ include ../includes/img-section
 
 
 //- vars
-- var headArgs = ["Responsive Masonry Image Gallery using cols property", "Masonry - img gallery", "cols"]
+-
+  var headArgs = [
+        "Responsive Masonry Image Gallery using cols property",
+        "Masonry - img gallery",
+        "cols",
+        "https://images.unsplash.com",
+    ]
 
 
 //- <head>
-+head(headArgs[0], headArgs[1], headArgs[2])
++head(headArgs[0], headArgs[1], headArgs[2], headArgs[3], headArgs[3])
 
 
 //- <body>
 body 
     section 
-        +diffImages()
+        +unsplashImg()
