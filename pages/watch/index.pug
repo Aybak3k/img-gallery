@@ -3,7 +3,13 @@ include ../includes/head
 
 
 //- vars
-- var headArgs = ["3 pages of responsive image galleries", "Image Gallery", "index"]
+-
+  var headArgs = [
+    "3 pages of responsive image galleries",
+    "Image Gallery",
+    "index"
+  ]
+- var connectedPages = ["grid", "cols", "flex"]
 
 
 //- <head>
@@ -12,4 +18,5 @@ include ../includes/head
 
 //- <body>
 body 
-    h2 supposedly a group of 3 links
+    each page in connectedPages
+        a(href=`./${page}.html`) 
