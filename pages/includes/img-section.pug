@@ -1,0 +1,35 @@
+- var images1 = [2076051, 1373686, 26841, 159042, 1864015, 1406201, 479533, 455824, 49344, 982096, 1373713, 786111, 479543, 1406229, 159066, 772125, 1373742, 1864019, 110400, 910880, 49343, 5552825]
+
+- var imgHost = "https://images.unsplash.com/photo-"
+-
+ var images2 = [
+    "1606787947360-4181fe0ab58c?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+    "1630371223750-5ec461a07b9b?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+    "1630403248103-728dbbbe15e5?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+    "1497215728101-856f4ea42174?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+    "1630402453987-cf6c6925d0a1?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+    "1593642531955-b62e17bdaa9c?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8&ixlib=rb-1.2.1&w=1000&q=80",
+    "1630395822970-acd6a691d97e?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+    "1630403607702-1e4da664d251?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+    "1606787620819-8bdf0c44c293?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8&ixlib=rb-1.2.1&w=1000&q=80",
+    "1630380368403-320f9aa18cd2?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&ixlib=rb-1.2.1&w=1000&q=80",
+    "1630373390202-48720d9bd978?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&ixlib=rb-1.2.1&w=1000&q=80",
+    "1630398777076-9b262a08c211?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHx8&ixlib=rb-1.2.1&w=1000&q=80",
+    "1630372535091-1f73cdded518?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&ixlib=rb-1.2.1&w=1000&q=80",
+    "1630350734184-12efe3b3b354?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyM3x8fGVufDB8fHx8&ixlib=rb-1.2.1&w=1000&q=80",
+    "1551667090-018e2ed18997?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
+    "1630071634094-64b2d5b40c57?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
+    "1618974692192-b14a3fa46b6f?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQyfGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
+    "1629906876122-f25ae9e3f21c?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIzfGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
+ ]
+
+
+mixin alikeImages()
+    each img in images1
+        figure 
+            img(src=`${img}.jpg`, alt="")
+
+mixin diffImages()
+    each img in images2
+        figure 
+            img(src=`${imgHost}${img}.jpg`, alt="")

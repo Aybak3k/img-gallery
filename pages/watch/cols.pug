@@ -1,0 +1,17 @@
+//- includes
+include ../includes/head
+include ../includes/img-section
+
+
+//- vars
+- var headArgs = ["Responsive Masonry Image Gallery using cols property", "Masonry - img gallery", "cols"]
+
+
+//- <head>
++head(headArgs[0], headArgs[1], headArgs[2])
+
+
+//- <body>
+body 
+    section 
+        +diffImages()
