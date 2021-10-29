@@ -1,0 +1,2 @@
+section{width:100%;padding:20px;display:-ms-grid;display:grid;-ms-grid-columns:(minmax(200px, 1fr))[auto-fill];grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));gap:40px}
+/*# sourceMappingURL=grid.css.map */

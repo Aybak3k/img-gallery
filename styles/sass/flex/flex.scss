@@ -1,0 +1,24 @@
+section {
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    
+    figure {
+        flex: 0 1 33.3%;
+        padding: 15px;
+    }
+}
+
+// Media Queries
+@media screen and (max-width: 970px) {
+    section figure {
+/* so confident + sass nesting that u forgot specifity huh XD */
+        flex: 0 1 50%
+    }    
+}
+
+@media screen and (max-width: 600px) {
+    section {
+        flex-direction: column;
+    } 
+}
