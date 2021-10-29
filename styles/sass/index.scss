@@ -1,1 +1,12 @@
 @import "./general";
+
+a {
+    text-decoration-color: aqua;
+    color:#fff;
+    padding: 15px;
+    font-size: 1.3em;
+    transition: all 0.5s ease-out;
+    &:hover{
+        color: aqua;
+    }
+}
