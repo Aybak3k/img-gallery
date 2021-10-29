@@ -1,4 +1,23 @@
-// General Syles
-* {margin: 0;padding: 0;box-sizing: border-box;}
-img {max-width: 100%;height: 100%;object-fit: cover;}
-body {background: #101010;width: 98vw;}
+// root vars
+:root {
+    --blk-clr:#202124;
+}
+
+// Basic Syles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--blk-clr);
+    width: 98vw;
+}
+
+// General Elements Styles
+img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

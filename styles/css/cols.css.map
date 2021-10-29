@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,AAAC,CAEJ,KAAK,CAAE,IAAI,CACX,OAAO,CAAC,IAAI,CAEZ,OAAO,CAAE,OAAO,CAEhB,UAAU,CAAE,IAAI,CAMnB,AAbD,AAQI,OARG,CAQH,MAAM,AAAC,CACH,OAAO,CAAE,YAAY,CACrB,KAAK,CAAE,IAAI,CACX,WAAW,CAAE,IAAI,CACpB",
+    "sources": [
+        "../sass/cols.scss"
+    ],
+    "names": [],
+    "file": "cols.css"
+}
